@@ -1,0 +1,290 @@
+@keyframes closingFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes openingFade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes removeBlur {
+    from {
+        -webkit-filter: blur(8px);
+        filter: blur(8px);
+    }
+
+    to {
+        -webkit-filter: none;
+        filter: none;
+    }
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+body {
+    background-color: transparent;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.displayVideo {
+    z-index: 8;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 9px;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    left: 50%;
+    display: none;
+}
+
+.fade {
+    background-color: black;
+    z-index: 10;
+    opacity: 1;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 9px;
+}
+
+.display {
+    border: 3px solid gray;
+    width: 70vw;
+    height: 40vw;
+    border-radius: 10px;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -10;
+    border-radius: 0px;
+}
+
+.nameTag {
+    margin: 0;
+    border: 3px solid gray;
+    position: absolute;
+    z-index: 11;
+    background-color: #556766;
+    color: #fff;
+
+    width: 10%;
+    height: 1vw;
+    top: 30.5vw;
+    left: 30%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+    text-align: center;
+    opacity: .8;
+}
+
+.textBox {
+    margin: 0;
+    border: 3px solid gray;
+    background: #556766;
+    color: #fff;
+
+    width: 50%;
+    height: 7vw;
+    top: 32.5vw;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+
+    z-index: 11;
+    opacity: .8;
+
+    position: absolute;
+}
+
+.dialButtons {
+    width: 70vw;
+    height: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.redButton {
+    opacity: 0;
+    position: absolute;
+    height: 15vw;
+    z-index: 10;
+    top: 9.5vw;
+    width: 18%;
+    left: 49.5%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    border-radius: 500px;
+    display: none;
+}
+
+.information {
+    opacity: inherit;
+    z-index: 20;
+    width: 30vw;
+    text-align: center;
+
+    top: 21vw;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    position: absolute;
+    color: white;
+}
+
+.container, .containerGame3 {
+    z-index: 5;
+    position: relative;
+    top: 2.5vw;
+}
+
+.containerGame3 {
+    position: absolute;
+    top: 7vw;
+    left: 6vw;
+}
+
+.colors {
+    opacity: inherit;
+    position: absolute;
+    top: 13vw;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+    z-index: 203;
+
+    text-align: center;
+}
+
+.colors div {
+    margin: 0px 5px;
+    border: 2px solid gray;
+    float: left;
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.lives {
+    top: 40.5vw;
+    z-index: 15;
+    opacity: 0;
+    color: white;
+}
+
+.lives h3,
+.lives span,
+.lives {
+    position: absolute;
+}
+
+.lives h3 {
+    top: -.6vw;
+    left: 2vw;
+}
+
+.lives img {
+    width: 2vw;
+    height: 2vw;
+    object-fit: conver;
+}
+
+.submit {
+    background-color: rgb(71, 77, 80);
+}
+
+.title {
+    height: 150px;
+    width: 400px;
+}
+
+.board {
+    display: none;
+    width: 24vw;
+    height: 24vw;
+    background-color: white;
+    border: 10px solid grey;
+
+    position: absolute;
+    left: 22.5vw;
+    top: 2vw;
+
+}
+
+.board img {
+    width: 7.5vw;
+    height: 7.5vw;
+    border: 1px solid #0c67ae;
+}
+
+.game2 {
+    position: absolute;
+    z-index: 200;
+}
+
+input {
+    color: white;
+    background-color: #181a1b;
+}
+
+video {
+    object-fit: cover;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 9px;
+}
+
+button {
+    width: 20%;
+    height: 70%;
+    background-color: #556766;
+    color: white;
+    border: 3px solid gray;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.game3 {
+    position: absolute;
+    z-index: 20;
+    color: white;
+    width: 30vw;
+    top: 8vw;
+    left: 35.5vw;
+}

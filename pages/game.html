@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Duncan, Lenny en Angelo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <img class="background" src="../images/deathparade.png" alt="welcome">
+
+    <br>
+    <br>
+
+    <div class="display center">
+        <div class="fade"></div>
+
+        <div class="game1 center">
+            <div class="colors">
+                <div class="block0"></div>
+                <div class="block1"></div>
+                <div class="block2"></div>
+                <div class="block3"></div>
+                <div class="block4"></div>
+                <div class="block5"></div>
+            </div>
+
+            <div class="information">
+                Green: Priority 1 <br>
+                Red: Priority 2 <br>
+                Blue: Priority 3 <br>
+                Orange: Priority 4 <br>
+                Grey: Priority 5 <br>
+                Yellow: Priority 6 <br>
+                <br>
+                Example: <br>
+
+                3 Green
+                2 Blue
+                1 Red
+                <br>
+                Input: 133221
+
+                <div class="container">
+                    <input type="number" class="numberAnswer" title="numberAnswer">
+                    <input type="submit" value="Submit" class="submit">
+                </div>
+            </div>
+        </div>
+
+        <div class="game2">
+            <div class="board">
+            </div>
+            <h1 style="display: none;">Turns: <span class="turns">0</span></h1>
+        </div>
+
+        <div class="game3">
+            <p>
+                Find a 10-digit number where the first digit is how many zeros in the number, the second digit is how
+                many 1s in the number etc. until the tenth digit which is how many 9s in the number.
+            </p>
+
+            <div class="containerGame3">
+                <input type="number" class="numberAnswerGame3" title="numberAnswer">
+                <input type="submit" value="Submit" class="submitGame3">
+            </div>
+        </div>
+
+        <img class="displayScreen" src="../images/speakingBarman.png" alt="welcome">
+        <video class="displayVideo" allow="autoplay 'src'">
+            <source src="../media/notRecommended.mp4" type="video/mp4">
+        </video>
+
+        <div class="lives">
+            <img src="../images/hearts.png" alt="hearts">
+            <h3>Lives:<span class="livesText">3</span></h3>
+        </div>
+        <button class="redButton" title="redButton" type="button"></button>
+
+        <div class="nameTag">...</div>
+        <div class="textBox">...</div>
+    </div>
+
+    <br>
+
+    <div class="dialButtons center">
+        <button type="button" class="dialButton1">Dial 1</button>
+        <button type="button" class="dialButton2">Dial 2</button>
+        <button type="button" class="dialButton3">Dial 3</button>
+        <button type="button" class="dialButton4">Dial 4</button>
+    </div>
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

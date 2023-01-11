@@ -1,0 +1,108 @@
+body {
+    background-color: transparent;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+.center p {
+    display: block;
+}
+
+main {
+    width: 100%;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -10;
+    border-radius: 0px;
+}
+
+button {
+    width: 40%;
+    height: 10%;
+    background-color: #556766;
+    color: white;
+    border: 3px solid gray;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+
+
+.home {
+    width: 30%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 0px #FF0000;
+    position: relative;
+    animation: mymove 15s forwards;
+
+}
+
+.moveImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 160px;
+    height: 160px;
+    position: relative;
+    animation: mymove 15s forwards;
+}
+
+@keyframes mymove {
+    from {
+        top: -600px;
+    }
+
+    to {
+        top: -25px;
+    }
+}
+@keyframes differentmove {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 20px;
+    }
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    text-shadow:2px 2px 0px red;
+}
+
+.movable {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 0px #FF0000;
+    position: relative;
+    animation: differentmove  1s forwards;
+}
